@@ -58,10 +58,10 @@ export default function SignInForm() {
     }
   };
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-800">
-      <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
+    <div className="flex min-h-screen items-center justify-center bg-gray-800">
+      <div className="w-full max-w-md space-y-8 rounded-lg bg-white p-8 shadow-md">
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
+          <h1 className="mb-6 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Login
           </h1>
           <p className="mb-4">Login to your anonmsg account</p>
@@ -95,7 +95,7 @@ export default function SignInForm() {
             </Button>
           </form>
         </Form>
-        <div className="text-center mt-4">
+        <div className="mt-4 text-center">
           <p>
             Not a member yet?{" "}
             <Link href="/sign-up" className="text-blue-600 hover:text-blue-800">
