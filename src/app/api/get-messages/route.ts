@@ -17,7 +17,7 @@ export async function GET(request: Request) {
         success: false,
         message: "Not authenticated",
       },
-      { status: 401 }
+      { status: 401 },
     );
   }
 
@@ -37,7 +37,7 @@ export async function GET(request: Request) {
           success: false,
           message: "No user found",
         },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -46,7 +46,7 @@ export async function GET(request: Request) {
         success: true,
         messages: user[0].messages,
       },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (error) {
     console.log("Error getting all messages of the user: ", error);
@@ -55,7 +55,7 @@ export async function GET(request: Request) {
         success: false,
         message: "Error getting all messages of the user",
       },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
